@@ -5,10 +5,11 @@ plugins {
 }
 
 android {
+    namespace= "com.shankar.videoPlayer"
     compileSdk = 31
 
     defaultConfig {
-        applicationId = "com.habileducation.pdfexport"
+        applicationId = "com.shankar.videoPlayer"
         minSdk = 28
         targetSdk = 31
         versionCode = 1
@@ -25,16 +26,20 @@ android {
                 "proguard-rules.pro"
             )
         }
+
+
+
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
         jvmTarget = "11"
     }
     buildFeatures {
         dataBinding = true
+        viewBinding= true
     }
 }
 
@@ -48,4 +53,6 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
     implementation ("com.itextpdf:itextpdf:5.5.13.1")
+
+
 }

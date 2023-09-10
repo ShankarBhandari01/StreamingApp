@@ -1,4 +1,4 @@
-package com.habileducation.pdfexport.util
+package com.shankar.videoPlayer.util
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -22,10 +22,6 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 
-/**
- * Created by Annas Surdyanto on 15/09/21.
- *
- */
 
 fun File.asBase64(): String {
     return ByteArrayOutputStream().use { outputStream ->

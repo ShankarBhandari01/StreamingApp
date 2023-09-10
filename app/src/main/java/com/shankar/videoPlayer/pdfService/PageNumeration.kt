@@ -1,6 +1,6 @@
-package com.habileducation.pdfexport.pdfService
+package com.shankar.videoPlayer.pdfService
 
-import com.habileducation.pdfexport.util.toDateString
+import com.shankar.videoPlayer.util.toDateString
 import com.itextpdf.text.*
 import com.itextpdf.text.pdf.PdfPCell
 import com.itextpdf.text.pdf.PdfPTable
